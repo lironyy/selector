@@ -1,0 +1,75 @@
+.users li.online,
+.shopping li.good {
+  background-color: lightgreen;
+}
+
+/* 
+.a .select {
+  background-color: blueviolet;
+} */
+
+.a > .select {
+  background-color: blue;
+}
+
+.c > .select {
+  background-color: blueviolet;
+}
+
+.a:first-child {
+  background-color: brown;
+}
+
+.my-custom-form input:invalid {
+  border: 2px solid red;
+}
+.my-custom-form input:valid {
+  border: 2px solid green;
+}
+
+table tr:nth-child(odd) {
+  background-color: lightblue;
+}
+table tr:nth-child(even) {
+  background-color: lightcoral;
+}
+table tr:nth-child(1) {
+  background-color: lightgray;
+}
+
+p.to-style::first-letter {
+  color: red;
+  font-size: 2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p.to-style::first-line {
+  color: lightcoral;
+  font-size: 1.5em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+p.to-style::selection {
+  background-color: yellow;
+  color: blue;
+}
+
+a[href$=".pdf"]::before,
+a[href$=".docx"]::before,
+a[href$=".doc"]::before,
+a[href$=".xlsx"]::before {
+  background-size: 15px 15px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  content: "";
+}
+
+a[href$=".pdf"]::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/136/136522.png");
+}
+a[href$=".docx"]::before,
+a[href$=".doc"]::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/136/136521.png");
+}
+a[href$=".xlsx"]::before {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/136/136532.png");
+}
